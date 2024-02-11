@@ -13,7 +13,9 @@ const HomePage = () => {
 
   const fetchCocktails = async () => {
     setFetching(true);
-    try {
+    try 
+    
+    {
       const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=&page=${page}`);
       const data = await response.json();
       setCocktails(prevCocktails => [...prevCocktails, ...data.drinks]);

@@ -9,7 +9,7 @@ const RecipeDetailPage = ({ route }) => {
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Image
         source={{ uri: recipe.strDrinkThumb }}
-        style={{ width: 300, height: 300, marginBottom: 20 }}
+        style={{ width: 200, height: 200, marginBottom: 20 }}
       />
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 10 }}>{recipe.strDrink}</Text>
       <Text>{recipe.strInstructions}</Text>
