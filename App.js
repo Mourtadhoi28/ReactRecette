@@ -3,6 +3,8 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomePage from './HomePage';
+import RecipeDetailPage from './RecipeDetailPage';
+ 
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,7 @@ function App() {
         {}
         <Stack.Screen name="Home" component={HomePage} options={{ title: 'Recette Cocktail' }} />
         <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="RecipeDetail" component={RecipeDetailPage} options={{ title: 'Détail de la recette' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
